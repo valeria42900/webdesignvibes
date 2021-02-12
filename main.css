@@ -1,4 +1,6 @@
 body {
-  background:blue;
 
+     background-image:url("alex.gif");
+      background-position: bottom;
+      background-size: cover;
 }

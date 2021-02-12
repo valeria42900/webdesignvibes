@@ -1,0 +1,29 @@
+@font-face {
+    font-family: 'katex_caligraphicbold';
+    src: url('katex_caligraphic-bold.021dd4dc-webfont.woff2') format('woff2'),
+         url('katex_caligraphic-bold.021dd4dc-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+body {
+    margin: 20px;
+    background: lightblue;
+font-family: 'katex_caligraphicbold', sans-serif;
+
+}
+
+h1 {
+
+  font-family: strumpf-std-contour, sans-serif;
+
+}
+
+p {
+  background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(122,122,158,1) 35%, rgba(0,212,255,1) 100%);
+  -webkit-box-shadow: 5px 4px 18px 41px #000000;
+  box-shadow: 5px 4px 18px 41px #000000;
+border-radius: 20px;
+}

@@ -1,0 +1,61 @@
+body {
+  background-color: #f2f1df;
+}
+
+h1 {
+  color: #065125;
+  align-items: center;
+  justify-content: center;
+  border: dotted;
+
+}
+
+details {
+  font-family: monospace;
+  font-size: 25px;
+}
+
+dialog {
+  border: dotted;
+}
+
+p {
+   font-family: monospace;
+
+
+}
+
+img {
+  border-radius: 8px;
+}
+
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 20%;
+
+
+}
+
+body {
+  font-family: serif;
+  text-align: center;
+}
+dialog {
+    background-color: #d1416f;
+    color: #f2f1df;
+    font-size: 15px;
+    font-weight: bold;
+    font-style: serif;
+
+
+}
+h2 {
+  color: #f2cb1b;
+  font-family: monospace;
+  align-items: center;
+  justify-content: center;
+  border: dotted;
+  font-size: 30px;
+}
