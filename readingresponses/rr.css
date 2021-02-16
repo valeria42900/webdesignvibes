@@ -1,0 +1,54 @@
+imgsrc{
+  width: 10px;
+}
+
+h1 {
+  font-size: 50px;
+  font-family: monospace;
+    letter-spacing: 5px;
+    text-indent: 50px;
+    color: rgb(42, 122, 79);
+}
+
+
+body {
+
+     background-color: rgb(210, 230, 153);
+      background-position: bottom;
+      background-size: cover;
+}
+
+p.top {
+  margin-left: 10%;
+  margin-right: 10%;
+  line-height: 1.8;
+  font-family: spacemono, monospace;
+  font-weight: light;
+  font-style: italic;
+  font-size: 24px;
+}
+
+p.big {
+  line-height: 1.8;
+}
+
+.body {
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 2.5%;
+    font-family: spacemono, monospace;
+    font-weight: light;
+    font-style: italic;
+    font-size: 24px;
+    color: white;
+  }
+
+  .navlist {
+font-size: 40px;
+    color: rgb(42, 122, 79);
+    font-size: 50px;
+    font-family: monospace;
+      letter-spacing: 5px;
+      text-indent: 50px;
+        margin-left: 5%;
+  }

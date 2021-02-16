@@ -8,5 +8,19 @@ body {
 h1 {
   font-size: 50px;
   font-family: monospace;
-
+    letter-spacing: 5px;
+    text-indent: 50px;
 }
+
+p.big {
+  line-height: 1.8;
+}
+
+.links {
+    margin-left: 1%;
+    margin-right: 10%;
+    margin-top: 2.5%;
+    font-family: spacemono, monospace;
+    font-weight: light;
+    font-style: italic;
+    font-size: 24px;

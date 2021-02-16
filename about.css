@@ -1,0 +1,39 @@
+h1 {
+  font-size: 50px;
+  font-family: monospace;
+    letter-spacing: 5px;
+    text-indent: 50px;
+    color: rgb(193, 136, 90);
+}
+
+
+body {
+
+     background-color: rgb(232, 195, 165);
+
+      background-position: bottom;
+      background-size: cover;
+
+}
+
+p.big {
+  line-height: 1.8;
+
+}
+
+.about {
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 2.5%;
+    font-family: spacemono, monospace;
+    font-weight: light;
+    font-style: italic;
+    font-size: 24px;
+    color: rgb(107, 75, 59);
+  }
+
+
+
+.navlist {
+  color: rgb(193, 136, 90);
+}
