@@ -1,0 +1,41 @@
+h1 {
+  font-size: 50px;
+  font-family: monospace;
+    letter-spacing: 5px;
+    text-indent: 50px;
+    color: rgb(89, 8, 62);
+}
+
+
+body {
+
+     background-color: rgb(235, 192, 234);
+      background-position: bottom;
+      background-size: cover;
+}
+
+p.big {
+  line-height: 1.8;
+}
+
+.links {
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 2.5%;
+    font-family: spacemono, monospace;
+    font-weight: light;
+    font-style: italic;
+    font-size: 24px;
+    color: black;
+  }
+
+.navlist {
+  font-size: 45px;
+  font-family: monospace;
+  margin-left: -10%;
+  margin-bottom:inherit;
+  position: absolute;
+  margin-right: 0%;
+    color: rgb(89, 8, 62);
+
+}
