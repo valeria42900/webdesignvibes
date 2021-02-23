@@ -3,19 +3,27 @@ h1 {
   font-family: monospace;
     letter-spacing: 5px;
     text-indent: 50px;
-    color: rgb(72, 91, 140);
+    color: rgb(108, 49, 36);
 }
 
 
 body {
 
-     background-color: rgb(148, 175, 221);
+      background-image: url("back.jpeg");
       background-position: bottom;
       background-size: cover;
+      margin: auto;
+      font-size: 10px;
+
+}
+img {
+  border-radius: 40%;
+  margin-top: -2%;
 }
 
-p.big {
+.p {
   line-height: 1.8;
+  font-size: 10px;
 }
 
 .links {
@@ -25,17 +33,314 @@ p.big {
     font-family: spacemono, monospace;
     font-weight: light;
     font-style: italic;
-    font-size: 24px;
+    font-size: 20px;
     color: black;
+
   }
 
-.navlist {
-  font-size: 45px;
+.convostat {
+  font-size: 15px;
+  color: black;
+  margin-left: -3%;
+}
+
+.div2 {
+  width: 400px;
+  height: 100px;
+  padding: 50px;
+  border: 1px solid rgb(226, 155, 97);
+  background-color: ;
+  color:rgb(150, 53, 36);
+
+
+  }
+
+  .answer2 {
+    width: 800px;
+    height: 170px;
+    padding: 30px;
+    border: 1px solid rgb(226, 155, 97);
+    background-color: ;
+    color: rgb(66, 166, 154);
+    margin-left: 10%;
+    font-size: 15px;
+    font-weight: 100;
+    /* margin-top: -4%; */
+    line-height: 1;
+
+    }
+
+
+.div3 {
+  width: 400px;
+  height: 100px;
+  padding: 50px;
+  font-size:18px;
+  border: 1px solid rgb(226, 155, 97) ;
+  background-color: ;
+  color:rgb(150, 53, 36);
+
+
+}
+
+.answer3 {
+  width: 800px;
+  height: 190px;
+  padding: 30px;
+  border: 1px solid rgb(226, 155, 97);
+  background-color: ;
+  color: rgb(66, 166, 154);
+  margin-left: 10%;
+  font-size: 15px;
+  font-weight: 100;
+  /* margin-top: -4%; */
+
+
+  }
+
+
+  .answer4 {
+    width: 900px;
+    height: 620px;
+    padding: 50px;
+    border: 1px solid rgb(226, 155, 97);
+    background-color: ;
+    color: rgb(66, 166, 154);
+    margin-left: 10%;
+    font-size: 15px;
+    font-weight: 100;
+    /* margin-top: -4%; */
+
+
+    }
+
+    .answer5 {
+      width: 800px;
+      height: 300px;
+      padding: 20px;
+      border: 1px solid rgb(226, 155, 97);
+      background-color: ;
+      color: rgb(66, 166, 154);
+      margin-left: 10%;
+      font-size: 15px;
+      font-weight: 100;
+      /* margin-top: -4%; */
+
+
+      }
+
+      .answer6 {
+        width: 900px;
+        height: 820px;
+        padding: 50px;
+        border: 1px solid rgb(226, 155, 97);
+        background-color: ;
+        color: rgb(66, 166, 154);
+        margin-left: 10%;
+        font-size: 15px;
+        font-weight: 100;
+        /* margin-top: -4%; */
+
+
+        }
+
+
+              .answer7 {
+                width: 700px;
+                height: 250px;
+                padding: 50px;
+                border: 1px solid rgb(226, 155, 97);
+                background-color: ;
+                color: rgb(66, 166, 154);
+                margin-left: 10%;
+                font-size: 15px;
+                font-weight: 100;
+                /* margin-top: -4%; */
+
+
+                }
+
+                .answer8 {
+                  width: 700px;
+                  height: 480px;
+                  padding: 50px;
+                  border: 1px solid rgb(226, 155, 97);
+                  background-color: ;
+                  color: rgb(66, 166, 154);
+                  margin-left: 10%;
+                  font-size: 15px;
+                  font-weight: 100;
+                  /* margin-top: -4%; */
+
+
+                  }
+                  .answer9 {
+                    width: 700px;
+                    height: 730px;
+                    padding: 50px;
+                    border: 1px solid rgb(226, 155, 97);
+                    background-color: ;
+                    color: rgb(66, 166, 154);
+                    margin-left: 10%;
+                    font-size: 15px;
+                    font-weight: 100;
+                    /* margin-top: -4%; */
+
+
+                    }
+                    .answer10 {
+                      width: 500px;
+                      height: 340px;
+                      padding: 50px;
+                      border: 1px solid rgb(226, 155, 97);
+                      background-color: ;
+                      color: rgb(66, 166, 154);
+                      margin-left: 10%;
+                      font-size: 15px;
+                      font-weight: 100;
+                      /* margin-top: -4%; */
+
+
+                      }
+.div4 {
+
+  width: 500px;
+  height: 150px;
+  padding: 50px;
+  border: 1px solid rgb(226, 155, 97);
+  background-color: ;
+  font-size:18px;
+  color:rgb(150, 53, 36);
+}
+
+
+.convo {
+  font-size: 18px;
+  color: rgb(150, 53, 36);
+  background-color: rgb(212, 194, 171);
+
+}
+
+.div5 {
+  width: 400px;
+  height: 100px;
+  padding: 50px;
+  border: 1px solid rgb(226, 155, 97);
+  background-color:;
+  font-size:18px;
+  color:rgb(150, 53, 36);
+}
+
+.div6 {
+  width: 400px;
+  height: 100px;
+  padding: 50px;
+  border: 1px solid rgb(226, 155, 97);
+  background-color:;
+  font-size:18px;
+  color:rgb(150, 53, 36);
+}
+
+.div7 {
+  width: 400px;
+  height: 100px;
+  padding: 50px;
+  border: 1px solid rgb(226, 155, 97);
+  background-color:;
+  font-size:18px;
+  color:rgb(150, 53, 36);
+}
+
+.div8 {
+  width: 400px;
+  height: 100px;
+  padding: 50px;
+  border: 1px solid rgb(226, 155, 97);
+  background-color:;
+  font-size:18px;
+  color:rgb(150, 53, 36);
+}
+
+.div9 {
+  width: 400px;
+  height: 100px;
+  padding: 50px;
+  border: 1px solid rgb(226, 155, 97);
+  background-color:;
+  font-size:18px;
+  color:rgb(150, 53, 36);
+}
+
+.div10 {
+  width: 400px;
+  height: 100px;
+  padding: 50px;
+  border: 1px solid rgb(226, 155, 97);
+  background-color:;
+  font-size:18px;
+  color:rgb(150, 53, 36);
+}
+
+
+
+
+.recc {
+  background-color: rgb(153, 4, 4);
+  color: white;
+  padding: 16px;
+  font-size: 16px;
   font-family: monospace;
+  border: none;
+  cursor: pointer;
+  margin-left: 124%;
+  margin-top: -100%;
+
+
+}
+
+.reccs {
+  position: relative;
+  display: inline-block;
+  width: 550px;
   margin-left: -10%;
-  margin-bottom:inherit;
+  margin-top: -90%;
+  color: rgb(115, 65, 52);
+  font-family: inherit;
+  font-size: 14px;
+}
+
+.rec {
+  display: none;
   position: absolute;
-  margin-right: 0%;
-    color: rgb(72, 91, 140);
+  font-size: 18px;
+background-image: url("back.jpeg");
+margin-left: 124%;
+margin-top: -100%;
+}
+}
+
+.rec {
+  color:  rgb(115, 65, 52);
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  width: 1000px;
+
+  margin-left: 124%;
+  margin-top: -100%;
+
+}
+
+.rec a:hover {
+  background-color: black;
+}
+
+.reccs:hover .rec {
+  display: block;
+}
+
+.reccs:hover .recc {
+    {
+
 
 }
