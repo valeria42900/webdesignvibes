@@ -1,0 +1,165 @@
+
+body {
+    margin: 20px;
+     background-image: url(blur.jpg);
+    font-family: 'DotGothic16', sans-serif;
+}
+
+
+h1 {
+font-family: 'Orbitron', sans-serif;
+  font-style: normal;
+  font-weight: 100;
+    border-style: solid;
+    border-width: thin;
+    background-color:rgb(231, 239, 247);
+
+
+}
+
+.bio {
+border-radius: 10px;
+width:190px;
+padding:130px;
+height:120px;
+font-size: 14px;
+margin-top: -8%;
+border-style: solid;
+border-width: thin;
+border-radius: 0px;
+background-color: rgb(250, 212, 99);
+}
+
+.convo {
+
+font-size:55px;
+font-family: 'Orbitron', sans-serif;
+font-style: normal;
+font-weight: 100;
+margin-top: -34%;
+margin-left: 5%;
+
+
+}
+
+
+
+.jc1 {
+  border-style: solid;
+  border-width: thin;
+  border-radius: 0px;
+  width: 450px;
+  height:300px;
+  margin-top:-0%;
+}
+
+
+.jc2 {
+  border-style: solid;
+  border-width: thin;
+  border-radius: 0px;
+  width: 360px;
+  height:400px;
+  margin-left: 70%;
+  margin-top:-91%;
+
+
+}
+
+.rec {
+
+width:360px;
+/* padding:130px; */
+height:800px;
+font-size: 14px;
+margin-left:70%;
+margin-top:-0%;
+margin-right: 14%;
+border-style: solid;
+border-width: thin;
+border-radius: 0px;
+background-color: rgb(246, 85, 85);
+}
+
+
+.date {
+margin-top:-47%;
+}
+
+
+p.bubble {
+	position: relative;
+	width: 300px;
+	text-align: center;
+	line-height: 1.4em;
+	margin: 40px auto;
+	background-color: rgb(217, 226, 224) ;
+	border: 8px solid #333;
+	border-radius: 30px;
+	padding: 20px;
+	font-size: large;
+  margin-left: 0%;
+  margin-top:-1%;
+  font-family: 'DotGothic16', sans-serif;
+}
+
+p.thought {
+	width: 300px;
+	border-radius: 200px;
+	padding: 30px;
+  font-size:16px;
+  font-weight:lighter;
+  font-family: 'Orbitron', sans-serif;
+}
+
+p.bubble:before,
+p.bubble:after {
+	content: ' ';
+	position: absolute;
+	width: 0;
+	height: 0;
+  font-family: 'DotGothic16', sans-serif;
+}
+
+p.speech:before {
+	left: 30px;
+	bottom: -50px;
+	border: 25px solid;
+	border-color: #333 transparent transparent #333;
+  font-family: 'DotGothic16', sans-serif;
+}
+
+p.speech:after {
+	left: 38px;
+	bottom: -30px;
+	border: 15px solid;
+	border-color:  transparent transparent;
+  font-family: 'DotGothic16', sans-serif;
+}
+
+p.thought:before,
+p.thought:after {
+	left: 10px;
+	bottom: -30px;
+	width: 40px;
+	height: 40px;
+	background-color: ;
+	border: 8px solid #333;
+	-webkit-border-radius: 28px;
+	-moz-border-radius: 28px;
+	border-radius: 28px;
+  font-family: 'DotGothic16', sans-serif;
+}
+
+p.thought:after {
+	width: 20px;
+	height: 20px;
+	left: 5px;
+	bottom: -40px;
+	-webkit-border-radius: 18px;
+	-moz-border-radius: 18px;
+	border-radius: 18px;
+  font-family: 'DotGothic16', sans-serif;
+}
+
+***
