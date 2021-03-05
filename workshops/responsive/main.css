@@ -1,0 +1,57 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
+
+}
+
+body {
+  margin: 1rem;
+
+}
+
+
+.box {
+  background: rgb(194, 132, 68);
+  max-width: 900px;
+  min-height: 50vh;
+  font-size: 20px;
+}
+
+p {
+  margin: 0;
+  font-size: 1em;
+}
+
+.flex {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.item {
+  background: rgb(39, 125, 112);
+  width: 32%;
+  height: 200px;
+  margin-bottom:20px;
+}
+
+
+@media screen and (max-width:800px) {
+  .box {
+    display: none;
+  }
+  .item {
+  width: 49%;
+  /* background:red; */
+ }
+}
+
+@media screen and (max-width:600px) {
+  .item {
+  width: 100%;
+}
+
+}

@@ -1,0 +1,127 @@
+* {
+  box-sizing: border-box;
+}
+
+
+body {
+    margin: 0;
+    background: url("diner2.jpg");
+}
+
+.words {
+color: black;
+font-size: 20px;
+font-weight: bold;
+position: fixed;
+margin-top: 2%;
+margin-left: 50%;
+z-index: 1;
+font-family: monospace;
+}
+
+.jukebox {
+    position: fixed;
+    /* top: 50%; */
+    /* left: 70%; */
+    top: 70%;
+    left:77%;
+    z-index: 1;
+    transform: translate(-50%, -50%);
+    /* animation: pulse 1s infinite alternate; */
+}
+
+
+
+.music1 {
+  width: 30vw;
+  height: 20vh;
+  /* background: red; */
+  position: relative;
+  bottom:-30px;
+  animation: mymove 13s infinite;
+}
+
+@keyframes mymove {
+  0% {
+    transform: translateX(-30vw);
+  }
+  50% {
+    transform: translateX(120vw);
+  }
+  100% {
+    transform: translateX(-120vw);
+  }
+
+}
+
+.music2 {
+  width: 30vw;
+  height: 20vh;
+  /* background: red; */
+  position: relative;
+  bottom:-70px;
+  animation: run 14s infinite;
+}
+
+@keyframes run {
+  0% {
+    transform: translateX(-30vw);
+
+  }
+  50% {
+    transform: translateX(120vw);
+  }
+
+  100% {
+    transform: translateX(-120vw);
+  }
+
+}
+
+.music3 {
+  width: 40vw;
+  height: 30vh;
+  position: relative;
+  bottom:-90px;
+  animation: bla 15s infinite;
+}
+
+
+@keyframes bla {
+  0% {
+    transform: translateX(-30vw);
+
+  }
+  50% {
+    transform: translateX(120vw);
+  }
+
+  100% {
+    transform: translateX(-120vw);
+  }
+
+}
+
+.music5 {
+  width: 40vw;
+  height: 30vh;
+  position: relative;
+  left:20px;
+  right:10px;
+  bottom:-40px;
+  animation: go 16s infinite;
+}
+
+@keyframes go {
+  0% {
+    transform: translateX(-30vw);
+  }
+  50% {
+    transform: translateX(120vw);
+  }
+
+  100% {
+    transform: translateX(-120vw);
+  }
+
+}
