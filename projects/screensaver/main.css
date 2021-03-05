@@ -60,20 +60,20 @@ font-family: monospace;
   /* background: red; */
   position: relative;
   bottom:-70px;
-  animation: run 14s infinite;
+  animation: run 40s infinite;
 }
 
 @keyframes run {
   0% {
-    transform: translateX(-30vw);
+    transform: translate(-30vw, 0);
 
   }
   50% {
-    transform: translateX(120vw);
+    transform: translate(120vw, 100px);
   }
 
   100% {
-    transform: translateX(-120vw);
+    transform: translate(-120vw, 0);
   }
 
 }
