@@ -38,7 +38,7 @@ font-family: monospace;
   /* background: red; */
   position: relative;
   bottom:-30px;
-  animation: mymove 13s infinite;
+  animation: mymove 7s infinite;
 }
 
 @keyframes mymove {
@@ -47,6 +47,9 @@ font-family: monospace;
   }
   50% {
     transform: translateX(120vw);
+  }
+75% {
+    transform: translate(30vw, 20px);
   }
   100% {
     transform: translateX(-120vw);
@@ -60,20 +63,25 @@ font-family: monospace;
   /* background: red; */
   position: relative;
   bottom:-70px;
-  animation: run 40s infinite;
+  animation: run 7s infinite;
 }
 
 @keyframes run {
   0% {
-    transform: translate(-30vw, 0);
+    transform: translateX(-30vw, 0);
 
   }
   50% {
-    transform: translate(120vw, 100px);
+    transform: translateX(120vw, 10px);
   }
 
+75% {
+    transform: translateX(120vw, 100px);
+  }
+
+
   100% {
-    transform: translate(-120vw, 0);
+    transform: translate(-120vw, 30);
   }
 
 }
@@ -83,7 +91,7 @@ font-family: monospace;
   height: 30vh;
   position: relative;
   bottom:-90px;
-  animation: bla 15s infinite;
+  animation: bla 7s infinite;
 }
 
 
@@ -94,6 +102,10 @@ font-family: monospace;
   }
   50% {
     transform: translateX(120vw);
+  }
+
+  75% {
+    transform: translate(35vw,20px);
   }
 
   100% {
@@ -109,19 +121,21 @@ font-family: monospace;
   left:20px;
   right:10px;
   bottom:-40px;
-  animation: go 16s infinite;
+  animation: go 7s infinite;
 }
 
 @keyframes go {
   0% {
-    transform: translateX(-30vw);
+    transform: translateX(-30vw, 0);
   }
   50% {
-    transform: translateX(120vw);
+    transform: translateX(120vw, 75px);
   }
-
+  75% {
+    transform: translateX(120vw, 75px);
+  }
   100% {
-    transform: translateX(-120vw);
+    transform: translateX(-120vw, 30);
   }
 
 }
