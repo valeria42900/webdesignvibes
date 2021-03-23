@@ -1,0 +1,323 @@
+  <!DOCTYPE html>
+  <html>
+
+  <head>
+
+    <title> a darkroom </title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <link rel="shortcut icon" type="image/png" href="filmroll.png"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <style>
+      #div1 {
+        width: 700px;
+        height: 500px;
+        padding: 10px;
+        border: 1px solid #aaaaaa;
+      }
+
+      #div2 {
+        width: 700px;
+        height: 500px;
+        padding: 10px;
+        border: 1px solid #aaaaaa;
+        transform: translateX(100%);
+        margin-top: -8.7%;
+
+      }
+
+      #div3 {
+        width: 700px;
+        height: 500px;
+        padding: 10px;
+        border: 1px solid #aaaaaa;
+      }
+
+      #div4 {
+        width: 700px;
+        height: 500px;
+        padding: 10px;
+        border: 1px solid #aaaaaa;
+        transform: translateX(100%);
+        margin-top: -8.7%;
+
+      }
+    </style>
+    <script>
+      function allowDrop(ev) {
+        ev.preventDefault();
+      }
+
+      function drag(ev) {
+        ev.dataTransfer.setData("text", ev.target.id);
+      }
+
+      function drop(ev) {
+        ev.preventDefault();
+        var data = ev.dataTransfer.getData("text");
+        ev.target.appendChild(document.getElementById(data));
+      }
+    </script>
+
+    <script type="text/javascript">
+      var sec = 0;
+
+      function pad(val) {
+        return val > 9 ? val : "0" + val;
+      }
+      var func;
+
+
+      function timerstart() {
+        func = setInterval(function() {
+          $("#seconds").html(pad(++sec % 60));
+          $("#minutes").html(pad(parseInt(sec / 60, 10)));
+        }, 1000);
+      }
+      timerstart();
+
+      function myStopFunction() {
+        clearInterval(func);
+      }
+
+      function myClearFunction() {
+        myStopFunction();
+        $("#seconds").html(pad(00));
+        $("#minutes").html(pad(00));
+        sec = 0;
+      }
+    </script>
+    <style>
+      .box {
+        margin: 10px;
+        padding: 10px;
+        font-size: 18px;
+        width: 490px;
+        height: 50px;
+      }
+
+      .info {
+        color: brown;
+        background: cornsilk;
+        border: 1px solid burlywood;
+        margin-left: .5%;
+      }
+
+      .warn {
+        color: rgb(247, 229, 225);
+        background: rgb(195, 133, 119);
+        border: 1px solid darkred;
+
+      }
+
+      .ok {
+        color: rgb(168, 50, 50);
+        background: rgb(244, 206, 156);
+        border: 1px solid darkgreen;
+
+      }
+
+      #myDIV {
+        width: 100%;
+        padding: 1px;
+        text-align: center;
+        /* background-color: lightblue; */
+        margin-top: 20px;
+        display: none;
+        font-family: monospace;
+      }
+    </style>
+  </head>
+
+  <body>
+
+    <div class="backg">
+      <div class="title">
+         welcome 2 the virtual darkroom 4 film luvrs.
+        </div>
+      <div class="slide-container">
+        <img src="1roll.jpg" width="700" height="300" />
+        <img src="2roll.jpg" width="700" height="300" />
+        <img src="3roll.jpg" width="700" height="300" />
+        <img src="4roll.jpg" width="700" height="300" />
+        <img src="5roll.jpg" width="700" height="300" />
+        <img src="6roll.jpg" width="700" height="300" />
+        <img src="7roll.jpg" width="700" height="300" />
+        <img src="8roll.jpg" width="700" height="300" />
+        <!-- <img src="9roll.jpg" width="700" height="300" /> -->
+      </div>
+    <p style="color:rgb(236, 188, 179)"> &nbsp;  &nbsp; hi! so you're here to make darkroom prints right? <br> &nbsp;  &nbsp; cool! lets get you started. you have a wide selection of negatives to choose from. <br> &nbsp;  &nbsp; lets assume you've already exposed the negatives with an enlarger onto darkroom paper. <br>  &nbsp;  &nbsp; <br>
+
+        &nbsp;  &nbsp;  head to the station below to begin the developing process of a print.
+<br>
+
+
+        <div class="box info">
+        &#9432; developer: 1 minute.
+      </div>
+      <div class="quiz-time">
+        <div class="timer">
+          <span id="minutes">00</span>:<span id="seconds">00</span>
+        </div>
+          <p style="color:rgb(236, 188, 179)">  timing is important. use the timer above to help for each step. drag the print onto the tray to develop for one minute.  </p>
+
+
+        <button href="#" id="show-explanation" class="button1" onclick="myStopFunction()">Stop</button>
+        <button href="#" id="show-explanation" class="button1" onclick="timerstart()">Start Again</button>
+        <button href="#" id="show-explanation" class="button1" onclick="myClearFunction();">Clear</button> </center>
+
+
+
+        <br>
+        <img id="drag1" src="pic1.jpg" draggable="true" ondragstart="drag(event)" width="300" height="300">
+        <img id="drag2" src="pic2.jpg" draggable="true" ondragstart="drag(event)" width="300" height="300">
+        <img id="drag3" src="pic3.jpg" draggable="true" ondragstart="drag(event)" width="300" height="300">
+        <img id="drag4" src="pic4.jpg" draggable="true" ondragstart="drag(event)" width="300" height="300">
+        <img id="drag5" src="pic5.jpg" draggable="true" ondragstart="drag(event)" width="300" height="300">
+        <img id="drag6" src="pic6.jpg" draggable="true" ondragstart="drag(event)" width="300" height="300">
+        <img id="drag7" src="pic7.jpg" draggable="true" ondragstart="drag(event)" width="300" height="300">
+        <img id="drag8" src="pic8.jpg" draggable="true" ondragstart="drag(event)" width="300" height="300">
+        <img id="drag9" src="pic9.jpg" draggable="true" ondragstart="drag(event)" width="300" height="300">
+        <img id="drag10" src="pic10.jpg" draggable="true" ondragstart="drag(event)" width="300" height="300">
+        <img id="drag11" src="pic11.jpg" draggable="true" ondragstart="drag(event)" width="300" height="300">
+        <img id="drag12" src="pic12.jpg" draggable="true" ondragstart="drag(event)" width="300" height="300">
+        <img id="drag13" src="pic13.jpg" draggable="true" ondragstart="drag(event)" width="300" height="300">
+        <img id="drag14" src="pic14.jpg" draggable="true" ondragstart="drag(event)" width="300" height="300">
+        <img id="drag15" src="pic15.jpg" draggable="true" ondragstart="drag(event)" width="300" height="300">
+        <img id="drag16" src="pic16.jpg" draggable="true" ondragstart="drag(event)" width="300" height="300">
+        <img id="drag17" src="pic17.jpg" draggable="true" ondragstart="drag(event)" width="300" height="300">
+        <img id="drag18" src="pic18.jpg" draggable="true" ondragstart="drag(event)" width="300" height="300">
+        <img id="drag19" src="pic19.jpg" draggable="true" ondragstart="drag(event)" width="300" height="300">
+        <img id="drag20" src="pic20.jpg" draggable="true" ondragstart="drag(event)" width="300" height="300">
+        <img id="drag21" src="pic21.jpg" draggable="true" ondragstart="drag(event)" width="300" height="300">
+        <img id="drag22" src="pic22.jpg" draggable="true" ondragstart="drag(event)" width="300" height="300">
+        <img id="drag23" src="pic23.jpg" draggable="true" ondragstart="drag(event)" width="300" height="300">
+        <img id="drag24" src="pic24.jpg" draggable="true" ondragstart="drag(event)" width="300" height="300">
+        <img id="drag25" src="pic25.jpg" draggable="true" ondragstart="drag(event)" width="300" height="300">
+        <img id="drag26" src="pic26.jpg" draggable="true" ondragstart="drag(event)" width="300" height="300">
+        <img id="drag27" src="pic27.jpg" draggable="true" ondragstart="drag(event)" width="300" height="300">
+        <img id="drag28" src="pic28.jpg" draggable="true" ondragstart="drag(event)" width="300" height="300">
+        <img id="drag29" src="pic29.jpg" draggable="true" ondragstart="drag(event)" width="300" height="300">
+        <img id="drag30" src="pic30.jpg" draggable="true" ondragstart="drag(event)" width="300" height="300">
+        <img id="drag31" src="pic31.jpg" draggable="true" ondragstart="drag(event)" width="300" height="300">
+        <img id="drag32" src="pic32.jpg" draggable="true" ondragstart="drag(event)" width="300" height="300">
+        <img id="drag33" src="pic33.jpg" draggable="true" ondragstart="drag(event)" width="300" height="300">
+        <img id="drag34" src="pic34.jpg" draggable="true" ondragstart="drag(event)" width="300" height="300">
+        <img id="drag35" src="pic35.jpg" draggable="true" ondragstart="drag(event)" width="300" height="300">
+
+
+        <div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+        <div id="div2" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+
+        <!-- (B2) WARNING -->
+        <div class="box warn">
+          &#9888; stop bath. - 10-30 seconds.
+        </div>
+      <p style="color:rgb(236, 188, 179)"> drag the print onto the tray after developing to put in stopbath. </p>
+        <div id="div3" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+        <div id="div4" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+
+        <!-- (B3) SUCCESS -->
+        <div class="box ok">
+          &#9432; fixer - 3 minutes for a finished print.
+        </div>
+        <p style="color:rgb(236, 188, 179)"> drag the print onto the tray after the stopbath to fix it. </p>
+        <div id="div3" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+        <div id="div4" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+
+        <button onclick="myFunction()" style="background-color:rgb(214, 73, 102); font-family:monospace; size="55"" ><p style="color:white;">the prints are now fixed and washed. open to view!</p></button> <br>
+        <br>
+        <div class="w3-content w3-display-container">
+          <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+          <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+          <div id="myDIV">
+
+
+  <img class="mySlides" src="1pic1.jpg" style="width="700" height="700"">
+  <img class=" mySlides" src="2pic2.jpg" style="width="700" height="700"">
+  <img class=" mySlides" src="3pic3.jpg" style="width="700" height="500"">
+  <img class=" mySlides" src="4pic4.jpg" style="width="700" height="700"">
+  <img class=" mySlides" src="5pic5.jpg" style="width="700" height="700"">
+  <img class=" mySlides" src="6pic6.jpg" style="width="700" height="700"">
+  <img class=" mySlides" src="7pic7.jpg" style="width="700" height="700"">
+  <img class=" mySlides" src="8pic8.jpg" style="width="700" height="700"">
+  <img class=" mySlides" src="9pic9.jpg" style="width="700" height="700"">
+  <img class=" mySlides" src="10pic10.jpg" style="width="700" height="700"">
+  <img class=" mySlides" src="11pic11.jpg" style="width="700" height="700"">
+  <img class=" mySlides" src="12pic12.jpg" style="width="700" height="700"">
+  <img class=" mySlides" src="13pic13.jpg" style="width="700" height="700"">
+  <img class=" mySlides" src="14pic14.jpg" style="width="700" height="700"">
+  <img class=" mySlides" src="15pic15.jpg" style="width="700" height="700"">
+    <img class=" mySlides" src="16pic16.jpg" style="width="700" height="700"">
+      <img class=" mySlides" src="17pic17.jpg" style="width="700" height="700"">
+        <img class=" mySlides" src="18pic18.jpg" style="width="700" height="700"">
+          <img class=" mySlides" src="19pic19.jpg" style="width="700" height="700"">
+            <img class=" mySlides" src="20pic20.jpg" style="width="700" height="700"">
+              <img class=" mySlides" src="21pic21.jpg" style="width="700" height="700"">
+                <img class=" mySlides" src="22pic22.jpg" style="width="700" height="700"">
+                  <img class=" mySlides" src="23pic23.jpg" style="width="700" height="700"">
+                    <img class=" mySlides" src="24pic24.jpg" style="width="700" height="700"">
+                      <img class=" mySlides" src="25pic25.jpg" style="width="700" height="700"">
+                      <img class=" mySlides" src="26pic26.jpg" style="width="700" height="700"">
+                      <img class=" mySlides" src="27pic27.jpg" style="width="700" height="700"">
+                      <img class=" mySlides" src="28pic28.jpg" style="width="700" height="700"">
+                      <img class=" mySlides" src="29pic29.jpg" style="width="700" height="700"">
+                      <img class=" mySlides" src="30pic30.jpg" style="width="700" height="700"">
+                      <img class=" mySlides" src="31pic31.jpg" style="width="700" height="700"">
+                      <img class=" mySlides" src="32pic32.jpg" style="width="700" height="700"">
+                      <img class=" mySlides" src="33pic33.jpg" style="width="700" height="700""">
+                      <img class=" mySlides" src="34pic34.jpg" style="width="700" height="700"">
+                      <img class=" mySlides" src="35pic35.jpg" style="width="700" height="700"">
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+</div>
+
+</div>
+</div>
+
+<script>
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName(" mySlides"); if (n> x.length) {slideIndex = 1}
+            if (n < 1) {slideIndex=x.length} for (i=0; i < x.length; i++) { x[i].style.display="none" ; } x[slideIndex-1].style.display="block" ; } </script>
+
+
+
+
+              <script>
+                function myFunction() {
+                  var x = document.getElementById("myDIV");
+                  if (x.style.display === "none") {
+                    x.style.display = "block";
+                  } else {
+                    x.style.display = "none";
+                  }
+                }
+              </script>
+
+
+
+
+  </body>
+  </div>
+
+  </htmL>

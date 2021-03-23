@@ -1,0 +1,45 @@
+* {
+  box-sizing: border-box;
+}
+*::selection {
+  background:black;
+}
+
+body {
+    margin: 20px;
+}
+
+
+.btn {
+  background: yellow;
+  cursor: pointer;
+  padding:10px;
+  width:80px;
+}
+.btn::selection {
+  display: none;
+  background: transparent;
+}
+
+.btn:hover {
+  background: red;
+}
+
+#box {
+  height:100%;
+  background: green;
+  position: fixed;
+  width:400px;
+  /* max-width: 400px; */
+  top:0;
+  right: -400px;
+  color:white;
+  font-size:25px;
+  padding:25px;
+  transition: transform .5s;
+}
+
+.active {
+transform: translateX(-400px);
+
+}
