@@ -1,0 +1,48 @@
+* {
+  box-sizing: border-box;
+}
+
+
+body {
+    margin: 0;
+    font-size: 30px;
+    font-family: cursive;
+    background: rgb(233, 157, 101)
+}
+
+.my-widget1 {
+  bottom:140px;
+  height:200px;
+}
+
+.marquee {
+  /* width: 300px;  */
+  overflow: hidden;
+  border:1px solid #ccc;
+  font-size: 60px;
+}
+
+
+.circle {
+background: rgb(221, 217, 132);
+width:200px;
+height:200px;
+border-radius: 50%;
+position: absolute;
+bottom: 140px;
+right: 620px;
+font-size: 20px;
+font-family: monospace;
+transition: transform .5s, border-radius .5s, background .5s;
+}
+
+.circle:hover {
+  border-radius: 0;
+  transform:scale(3) rotate(360deg);
+  background rgb(50, 50, 138);
+
+}
+
+* { box-sizing: border-box; }
+
+body { font-family: sans-serif; }
