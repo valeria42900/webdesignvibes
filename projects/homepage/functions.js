@@ -31,7 +31,6 @@ function myFunction() {
   }
 }
 </script>
-
 <script>
 var slideIndex = 1;
 showDivs(slideIndex);
