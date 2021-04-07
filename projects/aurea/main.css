@@ -1,0 +1,180 @@
+
+body {
+  font-family: 'Waiting for the Sunrise', cursive;
+  font-size:30px;
+  margin: 10px 50px;
+  letter-spacing: 6px;
+  font-weight: bold;
+  background-image: url('wave.jpg')"
+
+}
+
+
+
+:root{
+    --overlay-color-1: #a1dadd;
+    --overlay-color-2:  #026b76;
+    --overlay-color-3: #7ca2ce;
+    --overlay-color-4: #1c62b4;
+    --overlay-color-5: #c6def9;
+    --anim-duration: 2s;
+}
+
+#gradient {
+    opacity: 0.8;
+    background: none;
+}
+
+#gradient:after,
+#gradient:before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0; bottom: 0; left: 0; right: 0;
+}
+
+#gradient:before {
+    background: linear-gradient(135deg, var(--overlay-color-2) 0%, var(--overlay-color-1) 100%);
+    animation: OpacityAnim var(--anim-duration) ease-in-out 0s infinite alternate;
+}
+
+#gradient:after {
+    background: linear-gradient(135deg, var(--overlay-color-3) 0%, var(--overlay-color-4) 100%);
+    animation: OpacityAnim var(--anim-duration) ease-in-out calc(-1 * var(--anim-duration)) infinite alternate;
+}
+
+ @keyframes OpacityAnim {
+    0%{opacity: 1.0}
+    100%{opacity: 0.0}
+}
+
+@keyframes move_wave {
+    0% {
+        transform: translateX(0) translateZ(0)
+    }
+    50% {
+        transform: translateX(-3%) translateZ(0)
+    }
+    100% {
+        transform: translateZ(-100%) translateZ(0)
+    }
+}
+
+
+/* Define the key frames for animating the fade in / fade out */
+
+@keyframes fade {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+#one {
+  margin-left: 30%;
+  margin-bottom: 10%;
+}
+#two {
+  margin-left: 5%;
+  margin-bottom: 10%;
+}
+#three {
+margin-left: 50%;
+margin-bottom: 50%;
+margin-top: -6%;
+}
+/* attach the animations to the elements via their id attribute using a delay of 0s and 50% of the runtime respectively */
+
+#four {
+  margin-left:30%;
+  margin-top: -40%;
+}
+
+#one {
+  animation: fade 5s infinite 0s;
+}
+
+#two {
+  animation: fade 6s infinite 1.5s;
+}
+
+#three {
+  animation: fade 4s infinite 0s;
+}
+
+#four {
+  animation: fade 3s infinite 1.5s;
+}
+
+
+*/
+.waveWrapper {
+    overflow: hidden;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    margin: auto;
+}
+.waveWrapperInner {
+    position: absolute;
+    width: 100%;
+    overflow: visible;
+    height: 100%;
+    bottom: 5px;
+    left:40px;
+    /* background-image: linear-gradient(to top, #86377b 20%, #27273c 80%); */
+}
+/* .bgTop {
+    z-index: 15;
+    opacity: 0.5;
+} */
+.bgMiddle {
+    z-index: 10;
+    opacity: 0.75;
+}
+.bgBottom {
+    z-index: 5;
+}
+.wave {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-repeat: repeat no-repeat;
+    background-position: 0 bottom;
+    transform-origin: center bottom;
+}
+.waveTop {
+    background-size: 300% 200px;
+    left:auto;
+}
+.waveAnimation .waveTop {
+  animation: move-wave 3s;
+   -webkit-animation: move-wave 3s;
+   -webkit-animation-delay: 1s;
+   animation-delay: 1s;
+}
+.waveMiddle {
+    background-size: 300% 1000px;
+    position: absolute;
+    width:100%;
+}
+.waveAnimation .waveMiddle {
+    animation: move_wave 7s linear infinite;
+  ;
+
+}
+.waveBottom {
+    background-size: 300% 1000px;
+    width:100%;
+}
+.waveAnimation .waveBottom {
+    animation: move_wave 8s linear infinite ;
+} */
