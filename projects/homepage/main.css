@@ -7,7 +7,7 @@ body {
     margin: 0;
     font-family: monospace;
     font-size: 15px;
-    color: rgb(245, 217, 213);
+    color: rgb(255, 248, 247);
 }
 
 
@@ -17,8 +17,8 @@ body {
 }
 
 .title {
-  font-size: 60px;
-  font-family: monospace;
+  font-size: 50px;
+  font-family: 'Orbitron', sans-serif;
   font-weight: bold;
   margin-left: 50px;
   color: rgb(236, 188, 179);
