@@ -8,10 +8,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="main.css">
     <link rel="shortcut icon" type="favicon" href="music3.png"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap" rel="stylesheet">
   </head>
 
   <body>
-<div class="words"> <center> hey! welcome! <br> your favorite 80's song is playin. <br> enjoy the tunes.  </center> </div>
+
+
+
+
+<div class="words"> <center> welcome! <br> your favorite 80's song is playing. <br> enjoy the tunes. </center>
+
+<center> <img src="playy.png" onclick="playAudio('love.mp3')"> </center>
+  </div>
+
+
 
 
   <div class="music1"> <img src="music.png" class= "music1" width="200" height="300"></div>
@@ -23,12 +34,17 @@
     <div class="music5"> <img src="music5.png" class= "music1" width="200" height="300"></div>
 
 
-
-
-
 <img src="j.png" class="jukebox" width="260" height="380">
 
 
   </body>
 
+
+<script>
+javascript:
+
+function playAudio(url) {
+  new Audio(url).play();
+}
+</script>
   </htmL>

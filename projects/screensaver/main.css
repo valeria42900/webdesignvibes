@@ -9,14 +9,14 @@ body {
 }
 
 .words {
-color: black;
+color: rgb(246, 235, 208);
 font-size: 20px;
 font-weight: bold;
 position: fixed;
 margin-top: 2%;
 margin-left: 50%;
 z-index: 1;
-font-family: monospace;
+font-family: 'Share Tech Mono', monospace;
 }
 
 .jukebox {
@@ -138,4 +138,10 @@ font-family: monospace;
     transform: translateX(-120vw, 30);
   }
 
+}
+
+img {
+  max-width: 7%;
+  height: auto;
+  left:-15px;
 }
