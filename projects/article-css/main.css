@@ -1,5 +1,5 @@
 body {
-  background-color: #f2f1df;
+  background-color: #eed287;
 }
 
 h1 {
@@ -43,7 +43,7 @@ body {
   text-align: center;
 }
 dialog {
-    background-color: #d1416f;
+    background-color: #275208;
     color: #f2f1df;
     font-size: 15px;
     font-weight: bold;
@@ -52,7 +52,7 @@ dialog {
 
 }
 h2 {
-  color: #f2cb1b;
+  color: #f7efca;
   font-family: monospace;
   align-items: center;
   justify-content: center;
