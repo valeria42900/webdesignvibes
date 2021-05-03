@@ -140,8 +140,8 @@ font-family: 'Share Tech Mono', monospace;
 
 }
 
-img {
+.play {
   max-width: 7%;
   height: auto;
-  left:-15px;
+
 }
